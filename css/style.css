@@ -1,0 +1,196 @@
+* { box-sizing: border-box; } /*propiedad que mantiene el ancho que uno espeficique, independiente del padding*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+.home-wrapper{
+	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('landingpagepic.jpg'), url('../images/background.jpg') no-repeat center top;
+	background-size: cover;
+	color: white;
+}
+
+header{
+	padding: 8px 0;
+	width: 100%;
+	background-color: rgba(48, 48, 48, 0.5);
+	position: fixed;
+ /*esta regla va a permitir que se mantenga fijo el encabezado logo y menú*/
+}
+header img{
+	width: 300px;
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+header nav a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 10px 15px;
+}
+header nav a.active{
+	background: #fed136;
+	border-radius: 3px;
+}
+#home{
+	text-align: center;
+	padding: 200px 0 150px;
+}
+/*vamos a aumentar la fuente del banner central, para ello creo una clase para aplicar la regla a este espacio y le cambiamos el estilo de 
+la fuente a nomr¡al con el weigth*/
+#home h1{
+	font-size: 68px;
+	font-weight: normal;
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+#home .divider{
+	/*linea divisoria*/
+	width: 80px;
+	border-top: 5px solid #fed136;
+	margin: 0 auto;
+}
+/*incrementamos la fuente del parrafo*/
+#home p{
+	font-size: 24px;
+	margin-top: 40px;
+}
+/*usamos una fuente de iconos para poner los iconos de las redes sociales, la descargamos de font-awesome, llamando por la referencia
+de la clase creada social*/
+#home .social{
+	/*para despegarlo del parrafo*/
+	margin-top: 80px;
+}
+#home .social a{
+	/*darle estilos a los iconos*/
+	color: white;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: black;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 50px;
+	height: 50px;
+	width: 50px;
+	margin-right: 10px; /*para separarlos un poco entre ellos*/
+
+	/*para lograr que el efecto del hover sea un poco mas lento*/
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition: all .3s;
+}
+/*vamos a usar una pseudo clase para que cuando le hagar hover al icono, el background-color cambie a amarillo en este caso*/
+#home .social a:hover{
+	background-color: #fed136;
+}
+
+/*oscurecer la imagen background de la pagina buscando darken background image css* usamos la linea de codigo
+linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('landingpagepic.jpg'), url/*/
+#servicios .box{
+	/*para que se vea en columnas usamos display*/
+	display: inline-block;
+	text-align: center;
+	width: 33%;
+	padding: 10px;
+}
+#video{
+	background-color: black;
+	text-align: center;
+	padding: 30px 0;
+}
+
+/*como la seccion de portafolio tiene un color de fondo diferente, le creamos una regla especifica para ponerle los atributos que se requieres*/
+#portafolio{
+	background-color: whitesmoke;
+}
+
+#portafolio .box img{
+	width: 100%;
+}
+#portafolio .box{
+	display: inline-block;
+	text-align: center;
+	width: 31%;
+	margin: 1%;
+	background-color: white;
+}
+
+/*para darle color mas claro a la letra de las cajas de portafolio y separacion de las lineas de texto*/
+#portafolio .box p{
+	color: #666;
+	padding: 10px;
+}
+
+#contacto{
+	background-color: #303030;
+	background-image: url('../images/map-image.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+#contacto h2{
+	color: white;
+}
+#contacto input{
+	padding: 20px;
+	width: 400px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+#contacto textarea{
+	margin: 20px 0;
+	padding: 20px;
+	width: 400px;
+
+}
+#contacto button{
+	background-color: #fed136;
+	padding: 20px 40px;
+	border-color: #fed136;
+	border-radius: 3px;
+	color: white;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+footer {
+	padding: 90px 0;
+	text-align: center;
+	font-size: 18px;
+}
+/*creamos una regla para todas las secciones, ya q tienen los mismos atributos*/
+section{
+	/*usamos el selector section*/
+	padding: 80px 0;
+}
+section h2{
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.container{
+	width: 992px;
+	/*es la forma de centrar un contenido de un div en css*/
+	margin-left: auto; 
+	margin-right: auto;
+}
+/*la forma de cambiar la fuente en css, es a traves de la propiedad font-family
+usamos la ayuda de google fonts*/
+
+
+
+
+
+
+
+
+
+
+
+
